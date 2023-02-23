@@ -1,0 +1,31 @@
+shift + f10             executa o código que está carregado
+shift + f9              executa o código que está carregado no modo de depuração
+
+ctrl + shift + f10      carrega o código para a memória e executa o código
+
+ctrl + /                adiciona o comentário à linha ou conjunto de linhas selecionadas
+
+ctrl + w                seleciona uma palavra, uma linha ou todo o texto de acordo com o que for selecionando
+
+ctrl + e                abre a janela para abrir os últimos arquivos abertos
+ctrl + r                abre a caixa de localização
+ctrl + n                abre a janela de localização de classes
+ctrl + shift + n        abre a janela de localização para arquivos
+ctrl + alt + shift + n  abre a janela de simbolos
+ctrl + shift + a        abre a janela de ações
+ctrl + shift + r        abre a janela para substituir em arquivos
+ctrl + shift + f        abre a janela para substituir no projeto
+ctrl + shift + '        expande a parte onde está selecionado como project, console
+
+Caso seja instalado um pacote e o mesmo não apareça ir em:
+
+File >>
+    Settings >>
+        Project:pythonProject >>
+            Python Interpreter >>
+                Clicar no sinal de + >>
+                    Colocar na lupa o que deseja localizar >>
+                        Selecionar o Item >>
+                            Caso tenha uma versão específica, definí-la >>
+                                Selecionar a opção Install to user's site packages... >>
+                                    Clicar no botão Install Package

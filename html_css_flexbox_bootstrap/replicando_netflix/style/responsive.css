@@ -1,0 +1,26 @@
+/* criando media queries - serve para limitarmos a responsividade */
+/* estou aplicando esta regra na tela e quando a tela tiver no máximo 700px */
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 190px;
+        /* height: 40px; */ 
+    }
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:10%){
+    .logo_img{
+        widt:100%;
+    }
+}

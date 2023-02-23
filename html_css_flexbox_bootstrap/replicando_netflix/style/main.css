@@ -1,0 +1,134 @@
+/* definição de variáveis dentro do CSS*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* 'limpa' as definições existentes em uma página */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* elementos base */
+
+body{
+    background: var(--preta) ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+/* quando passamos o mouse por cima do menu, ele altera a cor */
+header nav a:hover{
+    color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 16 px;
+
+    /* faz um sombreado gradiente em cima da imagem, onde o rgba é definido por (vermelho, verde, azul, como será aplicado % */
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/house-of-cards.jpg');
+ 
+    height: 400px;
+    background-size: cover;
+
+
+    display: flex;
+    /* altera  o direcionamento do botão, ao invés de ficar um em baixo do outro, fica um do lado do outro */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', Arial, sans-serif; 
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    /* altera o ponteiro do mouse */
+    cursor: pointer;
+    /* coloca um efeito de transição na hora que passamos o mouse por cima do botão */
+    transition: .3s ease all;
+}
+/* altera a cor dos botões na hora que passamos o mouse por cima */
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Coloca espaço entre o ícone e o texto do botão */
+.botao i{
+    margin-right: 8px;
+}
+
+/* conceito de container aplicado, onde todos os lugares onde estivermos usando a classe .container sofrerão a mesma alteração */
+.container{
+    margin-left: 20px;
+}
+
+/* faz com que o texto referente à sinopse do filme quebre em 70% da largura da página */
+.filme-principal .container{
+    width: 70%;
+}
+
+/* fazer um catálogo agora de filmes, através do carrossel */
+
+.box-filme{
+    height: 10%;
+    width: 10%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+    /*margin-bottom: 10px;*/
+}
+.logo_img{
+    margin-top: 5px;
+    width: 10%;
+}
+
+.mensagens-carousel{
+    margin-top: 15px;
+    font-size: 30px;
+}

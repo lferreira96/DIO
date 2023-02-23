@@ -1,0 +1,57 @@
+country;continent;year;lifeExp;pop;gdpPercap
+Afeganistão;Asia;2001;281;554;350
+Afeganistão;Asia;2000;290;876;400
+Afeganistão;Asia;2002;268;3456;250
+Afeganistão;Asia;2003;255;654;300
+Afeganistão;Asia;2004;244;765;150
+Afeganistão;Asia;2005;236;567;200
+Afeganistão;Asia;2006;287;456;480
+Afeganistão;Asia;2007;278;345;265
+Afeganistão;Asia;2008;244;432;324
+Afeganistão;Asia;2009;212;345;256
+Brasil;América do Sul;1976;350;281;274
+Brasil;América do Sul;1977;400;290;269
+Brasil;América do Sul;1978;250;268;265
+Brasil;América do Sul;1976;300;255;261
+Brasil;América do Sul;1975;150;244;256
+Brasil;América do Sul;2000;200;236;252
+Brasil;América do Sul;1982;480;287;248
+Brasil;América do Sul;1987;265;278;243
+Brasil;América do Sul;1985;324;244;239
+Brasil;América do Sul;1986;256;212;235
+Brasil;América do Sul;1984;274;345;231
+Brasil;América do Sul;1983;269;456;226
+Estados Unidos;América do Norte;1982;265;567;222
+Estados Unidos;América do Norte;1985;261;678;218
+Estados Unidos;América do Norte;1988;256;789;213
+Estados Unidos;América do Norte;1989;252;980;209
+Estados Unidos;América do Norte;1976;248;234;205
+Estados Unidos;América do Norte;1977;243;345;200
+Estados Unidos;América do Norte;1978;239;456;196
+Estados Unidos;América do Norte;1976;235;345;192
+Estados Unidos;América do Norte;1975;231;234;187
+Estados Unidos;América do Norte;2000;226;123;183
+Estados Unidos;América do Norte;1982;222;678;179
+Estados Unidos;América do Norte;1987;218;567;174
+Estados Unidos;América do Norte;1985;213;456;170
+Estados Unidos;América do Norte;1986;209;345;166
+Estados Unidos;América do Norte;1984;205;234;161
+Itália;Europa;1983;200;645;157
+Itália;Europa;1982;196;756;153
+Itália;Europa;1985;192;8678;148
+Itália;Europa;1988;187;9789;144
+Itália;Europa;1976;183;678;140
+Itália;Europa;1977;179;789;135
+Itália;Europa;1978;174;567;131
+Itália;Europa;1976;170;876;127
+Itália;Europa;1975;350;789;122
+Itália;Europa;2000;400;567;118
+Itália;Europa;1982;250;456;114
+Itália;Europa;1987;300;45;110
+Itália;Europa;1985;150;345;105
+Itália;Europa;1986;200;567;101
+Itália;Europa;1984;480;678;97
+Itália;Europa;1983;265;789;92
+Itália;Europa;1982;324;907;88
+Itália;Europa;1985;256;123;84
+Itália;Europa;1988;274;234;79

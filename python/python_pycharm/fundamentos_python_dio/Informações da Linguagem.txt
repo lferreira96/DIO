@@ -1,0 +1,209 @@
+Comandos referente à repetição:
+
+    pass - deixa passar
+    break - interrompe a execução
+    continue - continua a execução
+
+funções:
+
+    str - converte um número para texto
+    int - converte um número para inteiro
+    sum - faz a soma de uma lista de valores
+    max - retorna o maior valor da lista
+          quando for texto, vai pegar
+    min - retorna o menor valor da lista
+    len - retorna o número de elementos de uma lista ou tupla
+    type - retorna o tipo da variável
+
+    tuple - converte uma lista em tupla
+    list - converte uma tupla em lista
+    quando temos uma lista e queremos aumentar a lista, podemos multiplicar a lista pela quantidade de vezes que queremos
+    que faça
+
+    set - converte uma lista em conjunto
+
+    range(<valor_inicial>,<valor_final>,<acréscimo ou decréscimo>) o range vai definir de quanto até quanto pulando de
+                                                               quantos em quantos irá fazer
+
+Diferença entre lista, tupla e conjuntos
+
+    lista               tupla               conjuntos
+        - uso [ ]           - uso ( )           - uso { }
+        - é mutável         - é imutável        - descarta elementos repetidos
+        - posso:            - não posso:        - posso:
+            - incluir           - incluir           - incluir
+            - alterar           - alterar           - excluir
+            - excluir           - excluir
+            - ordenar           - ordenar
+
+    .append()   - atributo de uma lista para adicionar novos elementos
+    .pop()      - remove um elemento de uma lista, não especificando valor nenhum, ele remove no fim da lista, caso seja
+                  especificado um valor, ele tentará remover o item que estiver naquela posição
+    .remove(<nome>) - remove um elemento de acordo com o nome dele, encontrando, ele remove da lista
+    .sort()     - coloca em ordem crescente a lista, tanto numérica quanto alfanumérica
+    .reverse()  - coloca em ordem decrescente, tanto numérica quanto alfanumérica
+
+Conjuntos
+
+    .add                    - adiciona um valor a um conjunto
+    .discard                - remove um valor de um conjunto
+    .union                  - faz a união de dois conjuntos
+    .intersection           - faz a interseção de dois conjuntos
+    .difference             - faz a diferença entre um conjunto em relação ao outro
+    .symmetric_difference   - pega todos os elementos que não fazem a interseção dos conjuntos
+    .issubset               - verifica se um subconjunto está contido dentro de outro
+    .issuperset             - verifica se um conjunto contém um subconjunto
+
+Método, Função e Classes
+
+    Diferença entre função e método
+
+    Função                          Método
+    - Retorna valor                 - Não retorna valor
+    -                                 - Declarado utilizando as letras def (de Definição)
+
+definindo uma classe:
+    class <nome_da_classe>:
+        def __init__(self, <parametro01>, <parametro02>):
+            self.<variavel_parametro01> = <parametro01>
+            self.<variavel_parametro02> = <parametro02>
+        def <metodo01>(self):
+
+            return self.<variavel_parametro01> + self.<variavel_parametro01>
+
+        def <metodo02>(self):
+            return self.<variavel_parametro01> - self.<variavel_parametro01>
+
+// instanciando a classe
+    calculadora = Calculadora(10,5)
+
+// chamadno os métodos
+    print(calculadora.soma())
+    print(calculadora.subtracao())
+    print(calculadora.multiplicacao())
+    print(calculadora.divisao())
+
+Módulos
+
+    módulos são os arquivos python
+    chamamos os módulos através do comando import
+    Abrindo o python console, podemos importar um módulo.
+
+    quando é chamado pelo mesmo arquivo, ele vai entrar no main e executar as funionalidades que estão ali dentro,
+    caso seja chamado de outro arquivo, não é executado, utilizado para realização de testes.
+    if __name__ == '__main__':
+
+    para executar o módulo direto do prompt colocamos:
+      - import televisao
+
+    depois chamamos a classe que precisamos.
+    ou podemos já fazer os dois juntos:
+    from televisao import TV
+    onde televisao é o nome do módulo(nome do arquivo) e TV é a classe que estamos chamando
+    depois instancio o que preciso normalmente
+    tv = TV()
+    e daí para frente faço minhas operações
+
+    função anônima (lambda) serve para simplificarmos a codificação
+
+    Arquivos:
+
+        - Gerando e escrevendo um arquivo
+            - Cria um arquivo se não exeistir e permite gravar a informação dentro dele.
+                Obs.: Se o arquivo já existir ele vai abrir o arquivo limpando o que existe
+                      dentro
+                - <variaval> = open('<nome_do_arquivo','w')
+                - variavel.write('<mensagem>')
+            - Alterar um arquivo existente
+                Obs.: Se o arquivo já existir ele vai abrir o arquivo e incluindo no final
+                      o que deseja incluir
+                - <variavel> = open('<nome_do_caruivo','a')
+                - variável.write('<mensagem>')
+
+            - Ler os dados de um arquivo existente
+                Obs.: Se o arquivo já existir ele vai abrir o arquivo e trazer as informações
+                      do arquivo para a memória
+                - <variavel> = open('<nome_do_caruivo','r')
+                - <variavelt> = <variavel>.read()
+
+
+            - Fecha um arquivo
+                - variavel.close()
+            - Apaga um arquivo existente
+                - import os
+                  os.remove('<nome do arquivo>')
+
+    List Comprehension - Compreensão de lista
+    - É a forma de se encurtar um expressão utilizando for e if
+
+    Exemplo:
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+    newlist = []
+
+    for x in fruits:
+      if "a" in x:
+        newlist.append(x)
+
+    print(newlist)
+
+    Irá virar:
+
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+    newlist = [x for x in fruits if "a" in x]
+    print(newlist)
+
+
+    A biblioteca shutil contém comandos para alteração de arquivos como: copiar, mover, entre outros
+    import shutil
+
+    Desta forma estou copiando o arquivo que eu quero para um determinado caminho, caso o caminho não seja
+    especificado, salvará na pasta corrente.
+
+    Posso também alterar o nome para o qual o arquivo será copiado, alterando o caminho e nome de arquivo
+
+    shutil.copy(nmarquivo,"c:/temp")
+
+    Para comentar uma linha usamos o #
+
+    Para comentarmos mais de uma linha usamos o ''' ou o """
+
+
+
+    Trabalhando com data:
+
+    bibliotecas:
+
+    from datetime import date, time, datetime, timedelta
+     
+
+    strftime - transforma hora para string
+    strptime - transforma string para hora
+
+    strfdate - transforma data para string
+    strpdate - transforma string para data
+    timedelta - fala qual é a data convertida para dias
+
+Vendo a versão do instalador de pacotes do Pycharm (PIP)
+No powershell ou no terminal podemos colocar o pip --version, que vai mostrar a versão do instalador de pacotes
+colocando pip --help, exibe todas os comandos possíveis de execução.
+
+para instalar um pacote, colocamos:
+    pip install <nome do pacote>
+
+para verificar se foi instalado o pacote, basta colocar:
+    pip freeze
+
+month = int(input())
+'''
+TODO Faça uma relação entre as possíveis entradas e os meses (em inglês).
+TODO Imprima o valor de cada chave em relação as entradas do programa.
+'''
+months_dict = {1: 'January',2:'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June', 7: 'July', 8: 'August', 9: 'September', 10:'October', 11:'November', 12:'December'
+}
+
+if month in months_dict.keys():
+    print(months_dict[month])
+
+
+

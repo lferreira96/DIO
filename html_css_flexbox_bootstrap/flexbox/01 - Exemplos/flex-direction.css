@@ -1,0 +1,72 @@
+/*
+
+Utilizado no exemplo: 1.display-flex.html
+
+*/
+
+.flex-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.flex-item{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Trabalhando as linhas e suas propriedades*/
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.row-reverse li{
+    background-color: red;
+}
+
+/* Trabalhando as colunas e suas propriedades*/
+
+.column{
+    float: left;
+    flex-direction: column;
+}
+
+.column li{
+    background: orange;
+}
+
+.column-reverse{
+    float: right;
+    flex-direction: column-reverse;
+}
+
+.column-reverse li{
+    
+    background: purple;
+}
+
+
+.flex{
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    display: flex;
+}
+
+.item{
+    background-color: aqua;
+    margin: 5px;
+}
+

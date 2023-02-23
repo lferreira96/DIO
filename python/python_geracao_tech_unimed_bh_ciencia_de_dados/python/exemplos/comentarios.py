@@ -1,0 +1,1 @@
+# Para adicionar um comentário basta colocar o sinal de # na frente do que precisa que seja comentário.

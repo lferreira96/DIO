@@ -1,0 +1,29 @@
+…or create a new repository on the command line
+
+git init - cria o repositório do GIT oculto para a utilização do versionamento
+git add . - Adiciona todos os arquivos no versionamento
+git commit -m "first commit" - faz a atualização do arquivo
+git remote add origin https://github.com/lferreira96/primeiro-repositorio.git - cria o repositório fala onde será feito remoto
+git push origin main - adiciona o arquivo no versionamento
+git add . - adiciona as alterações feitas nos arquivos
+git status - mostra o status dos arquivos
+
+
+
+toda vez que alterar, tem que fazer o commit e adicionar o arquivo no versionamento
+git commit -m "first commit" - faz a atualização do arquivo
+git push origin main - adiciona o arquivo no versionamento
+
+
+echo "# primeiro-repositorio" >> README.md - colocar informação dentro do arquivo
+git add README.md - prepara o diretório para o arquivo, o nome tem que ser idêntico ao que foi criado na linha do echo, senão não funciona a linha de commit
+
+git branch -M main - adiciona o primeiro versionamento
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/lferreira96/primeiro-repositorio.git
+git branch -M main
+git push -u origin main
+

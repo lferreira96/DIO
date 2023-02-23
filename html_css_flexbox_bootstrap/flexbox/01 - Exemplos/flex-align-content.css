@@ -1,0 +1,42 @@
+.container{
+    height: 500px;
+    max-width: 500px;
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.item{
+    background-color: orangered;
+    padding: 0 5px;
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+/* CSS para linhas */
+
+.center{
+    align-content: center;
+}
+
+.stretch{
+    align-content: stretch;
+}
+
+.flex-start{
+    align-content: flex-start;
+}
+
+.flex-end{
+    align-content: flex-end;
+}
+
+.space-between{
+    align-content: space-between;
+}
+
+.space-around{
+    align-content: space-around;
+}

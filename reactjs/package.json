@@ -1,0 +1,23 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "Documetos e exercícios sobre ReactJS ministrador pelo professor Bruno Carneiro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lferreira96/REACTJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lferreira96/REACTJS/issues"
+  },
+  "homepage": "https://github.com/lferreira96/REACTJS#readme",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}

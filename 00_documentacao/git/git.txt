@@ -1,0 +1,101 @@
+1- Controle de Versão
+2 - Armazenamento em nuvem
+3 - trabalho em equipe
+4 - melhorar seu código
+5 - Reconhecimento
+
+Objetos do GIT
+O git armazena metadados nos objetos
+
+ - Blobs
+	Contém metadados do git:
+		- tipo do objeto
+		- o tamanho da string
+		- tamanho do arquivo
+
+	Exemplo:
+	echo 'conteudo' | git hash-object --stdin
+	fc31e91b26cf85a55e072476de7f263c89260eb1
+	echo -e 'conteudo' | openssl sha1
+	65b0d0dda479cc03cce59528e28961e498155f5c
+	echo -e 'blob 9\0conteudo' | openssl sha1
+	fc31e91b26cf85a55e072476de7f263c89260eb1
+	
+ - Trees (árvores)
+	Armazenam blobs e apontam.
+	Guarda o nome do arquivo
+	responsável por montar toda a estrutura onde estão os arquivos
+	apontam para os arquivos ou para outras árvores
+
+
+ ctrl + l - limpa a tela
+ cd <pasta> - entra na pasta
+ git init - inicializa um repositório git na pasta criada para o versionamento a   mesma fica oculta
+
+ ls -a - mostra as pastas ocultas
+
+ dentro da pasta oculta criada, são criadas algumas estruturas e pastas: HEAD, config, description hooks/ info/ objects/ refs/
+
+ para voltar uma pasta anterior colocar: cd .. (com espaço entre o cd e o ..)
+ 
+ git config --global user.email "lferreira96@gmail.com" - cria um email global
+ git config --global user.name "lferreira" - cria um usuário global
+
+ - Arquivo Markdown
+
+ - forma humanizada de se escrever um html
+
+ Usar o editor Typora
+
+ # Título nível 1	- H1
+ ## Título nível 2	- H2
+ ### Título nível 3	- H3
+ #### Título nível 4	- H4
+ ##### Título nível 5	- H5
+ ###### Título nível 6	- H6
+
+ Negrito: **Palavra**
+ Itálico: _Palavra_
+
+ para criar uma lista, colocar um espaço sinal de menos(-) outro espaço
+ para criar uma lista ordenada, colocar um espaço, número + ponto(.) outro espaço
+ para criar uma caixa de seleção, colocar um espaço, [] outro espaço
+
+ - git config --global user.email "lferreira96@gmail.com" - diz qual será o e-mail do versionamento
+ - git config --global user.name "lferreira" - diz qual será o usuário do versionamento
+ - git add * adiciona as informações no versionamento
+ - git commit -m "Commit Inicial" executa a gravação - adiciona o arquivo ao versionamento com uma determinada mensagem para identificação
+ - git status - diz como está o versionamento.
+   caso modifique um arquivo de local e dê um git status, o git vai mostrar uma mensagem indicando que foi feito a mudança de um local para o outro, neste caso é só dar um git add <nome do arquivo> para a pasta destino
+ - comando mv (move) o que quer mover para onde.
+
+
+ - git config --list - exibe toda lista de configuração do git
+
+ - para alterar um dos itens primeiro liberamos o item
+	- git config --global --unset user.email
+	- git config --global --unset user.name
+
+
+
+ - enviando repositório local para um repositório remoto (github)
+   - adicionando o computador de trabalho
+     - git remote add origins https://github.com/lferreira96/livro-receitas.git onde  https://github.com/lferreira96/livro-receitas.git foi obtido do site github
+     - git remote -v - tras uma lista de repositórios remotos que temos cadastrado.
+     - git status - certifica que não existe nenhuma pendência no repositório
+
+     - git push origin master  - vai fazer o merge entre as versões
+
+
+Commit -m "mensagem" - criação de nova versão 
+
+Branch - bifurcação da sequência normal do código.
+
+Branch main x Branch master
+
+u usuario - desenvolvedor escolhe agora qual o nome da branch
+
+
+Merge - Juntar as bifurcações.
+
+A tag HEAD aponta sempre para o último commit de uma branch

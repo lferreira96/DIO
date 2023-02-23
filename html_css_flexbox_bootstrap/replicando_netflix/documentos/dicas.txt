@@ -1,0 +1,20 @@
+tecla de atalho:
+alt+shift+seta para baixo - repete a linha para baixo
+escrevendo div + nome da classe, o div já vai ser criado colocando já a classe
+exemplo:
+	div.filme-principal
+
+	na hora que apertar o enter fará a seguinte estrutura:
+
+		<div class="filme-principal">
+            
+        	</div>
+
+caixas wrapper serve para isolar blocos.
+
+background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/house-of-cards.jpg');
+
+linear-gradiente - vai criar uma camada em cima de uma imagem, quando definimos rgba(0,0,0,.50),rgba(0,0,0,.50)100%) - criamos uma camada em cima de uma imagem gradiente. o primeiro rgba trata da cor de cima e o segundo trata da cor de baixo.
+
+por padrão, toda vez que criamos uma filha direta, ela herda as informações do pai, porém, quando criamos uma filha dentro de uma filha, por padrão ela vem o estilo como block - bloqueado.
+ctrl+barra de espaço - para aparecer o menu de locais.

@@ -1,0 +1,41 @@
+/*
+
+Utilizado no exemplo: 1.display-flex.html
+
+*/
+
+.flex-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.flex-item{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+/*
+
+Utilizado no exemplo: 0.display-flex.html
+
+*/
+.flex{
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    display: flex;
+}
+
+.item{
+    background-color: aqua;
+    margin: 5px;
+}
+
