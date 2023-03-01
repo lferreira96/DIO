@@ -1,0 +1,35 @@
+// Exercicio 01
+
+/*var nota;
+nota = 100;
+alert("Resultado: " + nota);*/
+
+
+// Exercício 02
+
+var nome, nota1, nota2, nota3, nota4, media;
+var passou;
+
+passou = false;
+
+nome = prompt("Nome: ");
+nota1 = parseInt(prompt("1ª nota: "));
+nota2 = parseInt(prompt("2ª nota: "));
+nota3 = parseInt(prompt("3ª nota: "));
+nota4 = parseInt(prompt("4ª nota: "));
+media = parseFloat((nota1 + nota2 + nota3 + nota4)/4)
+
+
+if (media >= 6)
+    passou = true;
+
+if (passou && media <=7){
+    alert(nome + " você passou raspando com a média: "+ media);
+}else{
+    if (passou && media>7){
+        alert(nome + "você passou bem com a média: " + media);
+    }
+    else{
+        alert(nome + "você foi reprovado com a média: " + media)
+    }
+}

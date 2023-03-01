@@ -9,10 +9,6 @@ funções:
     str - converte um número para texto
     int - converte um número para inteiro
     sum - faz a soma de uma lista de valores
-    max - retorna o maior valor da lista
-          quando for texto, vai pegar
-    min - retorna o menor valor da lista
-    len - retorna o número de elementos de uma lista ou tupla
     type - retorna o tipo da variável
 
     tuple - converte uma lista em tupla
@@ -37,6 +33,9 @@ Diferença entre lista, tupla e conjuntos
             - ordenar           - ordenar
 
     .append()   - atributo de uma lista para adicionar novos elementos
+    .copy()     - atributo de uma lista para realizar cópia dos elementos
+    .clear()    - atributo de uma lista que limpa o conteúdo da mesma
+    
     .pop()      - remove um elemento de uma lista, não especificando valor nenhum, ele remove no fim da lista, caso seja
                   especificado um valor, ele tentará remover o item que estiver naquela posição
     .remove(<nome>) - remove um elemento de acordo com o nome dele, encontrando, ele remove da lista
